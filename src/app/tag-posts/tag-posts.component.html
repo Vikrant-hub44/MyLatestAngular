@@ -1,0 +1,14 @@
+<p-table [value]="posts" [paginator]="true" [rows]="10">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Id</th>
+            <th>Author</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-posts>
+        <tr>
+            <td>{{posts.id}}</td>
+            <td>{{posts.author}}</td>
+        </tr>
+    </ng-template>
+</p-table>
